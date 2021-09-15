@@ -12,7 +12,7 @@ pipeline {
   stages {
     stage('Start'){
      steps {
-     script{
+     script {
         pipelineStages.initStage(this,params)
         pipelineStages.readPropertyFile(this)
         }
