@@ -1,1 +1,18 @@
 @Library('local-shared-library')
+String[] params = InputParameters.split(;) 
+@Field def Map<String,string> parametermap = new LinkedHasMap<String,string>()
+@Field def Map<String,string> propertymap = new LinkedHasMap<String,string>()
+
+
+pipeline {
+  agent any 
+  stages {
+    stage('Start'){
+     steps {
+        pipelineStages.initStage(this,params)
+        pipelineStages.readPropertyFile(this)
+      }
+    }
+   }
+}
+
