@@ -13,8 +13,8 @@ pipeline {
     stage('Start'){
      steps {
      script {
-        pipelineStages.initStage(this,params)
-        pipelineStages.readPropertyFile(this)
+        pipelineStage.initStage(this,params)
+        pipelineStage.readPropertyFile(this)
         }
       }
     }
