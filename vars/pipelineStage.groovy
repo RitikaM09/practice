@@ -14,6 +14,7 @@ def initStage(parent,params){
             println parent.parameterMap
         //} else if (paramArray.length == 1) {
            // parent.parameterMap.put(key.toString().trim(), "");
+        println 'Ends here'
         
     }
 }
