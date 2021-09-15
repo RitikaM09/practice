@@ -1,3 +1,6 @@
+import java.util.List
+import groovy.transform.Field
+
 @Field final PROPERTY_DIR="vard/my.properties"
 def initStage(parent,params){
     for (param in params) {
