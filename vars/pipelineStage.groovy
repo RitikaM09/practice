@@ -1,7 +1,8 @@
 import java.util.List
 import groovy.transform.Field
 
-@Field final PROPERTY_DIR="vard/my.properties"
+@Field final PROPERTY_DIR="vars/my.properties"
+
 def initStage(parent,params){
     for (param in params) {
         String[] paramArray = param.split(":", 2)
@@ -17,6 +18,13 @@ def initStage(parent,params){
     }
 }
 
+def readPropertyFile(p){
+    def myFile = reafFile file: "vars/my.properties"
+    def lines = myFile.readLines()
+    lines.each {line ->
+        println line
+}
+}
 
 
 
