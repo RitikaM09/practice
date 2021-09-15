@@ -3,8 +3,8 @@ import groovy.transform.Field
 import groovy.lang.Closure
 
 String[] params = InputParameters.split(";") 
-@Field def Map<String,String> parametermap = new LinkedHashMap<String,String>()
-@Field def Map<String,String> propertymap = new LinkedHashMap<String,String>()
+@Field def Map<String,String> parametermap = new LinkedHashMap<String, String>()
+@Field def Map<String,String> propertymap = new LinkedHashMap<String, String>()
 
 
 pipeline {
