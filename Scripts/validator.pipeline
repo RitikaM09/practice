@@ -1,4 +1,7 @@
 @Library('local-shared-library')
+import groovy.transform.Field
+import groovy.lang.Closure
+
 String[] params = InputParameters.split(;) 
 @Field def Map<String,string> parametermap = new LinkedHasMap<String,string>()
 @Field def Map<String,string> propertymap = new LinkedHasMap<String,string>()
