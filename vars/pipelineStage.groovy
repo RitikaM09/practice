@@ -19,7 +19,7 @@ def initStage(parent,params){
 }
 
 def readPropertyFile(p){
-    def myFile = reafFile file: "vars/my.properties"
+    def myFile = readFile file: "vars/my.properties"
     def lines = myFile.readLines()
     lines.each {line ->
         println line
